@@ -15,7 +15,7 @@ class Weather:
         self.city = city
 
     def get_weather(self) -> None:
-        url_city = URL + '/' + self.city
+        url_city = '{0}/{1}'.format(URL, self.city)
         params = {
             'nTqM': '',
             'lang': self.lang
@@ -28,8 +28,7 @@ class Weather:
     
 
 def get_weather(city: str, lang: str = 'ru') -> None:
-    url_city = URL + '/' + city
-    url_city = '{0}/{1}'.format(URL, city)
+    url_city = '{0}/{1}'.format(URL, self.city)
     params = {
         'nTqM': '',
         'lang': lang
