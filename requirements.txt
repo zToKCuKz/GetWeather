@@ -1,1 +1,1 @@
-pip install requests
+pip install requestsrequests==2.31.0
